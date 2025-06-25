@@ -12,26 +12,26 @@
 Выполняем следующие команды: 
 Создаем 2 записи в календаре
 
-```curl http://127.0.0.1:5000/api/v1/note/ -X POST -d "2025-05-01|title|text"```
+```curl http://127.0.0.1:5000/api/v1/calendar/ -X POST -d "2025-05-01|title|text"```
 
-```curl http://127.0.0.1:5000/api/v1/note/ -X POST -d "2025-05-02|title|text"```
+```curl http://127.0.0.1:5000/api/v1/calendar/ -X POST -d "2025-05-02|title|text"```
 
 
 Проверяем возможность создавать вторую запись на туже дату
 
-```http://127.0.0.1:5000/api/v1/note/ -X POST -d "2025-05-01|title|text"```
+```http://127.0.0.1:5000/api/v1/calendar/ -X POST -d "2025-05-01|title|text"```
 
 
 Получаем список записей всех и частной
 
-```curl http://127.0.0.1:5000/api/v1/note/ -X POST -d "2025-05-02|title|text"```
+```curl http://127.0.0.1:5000/api/v1/calendar/ -X POST -d "2025-05-02|title|text"```
 
-```curl http://127.0.0.1:5000/api/v1/note/1/```
+```curl http://127.0.0.1:5000/api/v1/calendar/1/```
 
 
 Проверяем возможно редактирования записи
 
-```curl http://127.0.0.1:5000/api/v1/note/1/ -X PUT -d "2025-05-03|title|new text"```
+```curl http://127.0.0.1:5000/api/v1/calendar/1/ -X PUT -d "2025-05-03|title|new text"```
 
 
 
