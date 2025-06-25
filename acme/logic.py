@@ -5,8 +5,8 @@ import model
 import db
 
 
-TITLE_LIMIT = 5
-TEXT_LIMIT = 6
+TITLE_LIMIT = 30
+TEXT_LIMIT = 200
 
 
 class LogicException(Exception):
